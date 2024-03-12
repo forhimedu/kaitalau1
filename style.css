@@ -5,12 +5,7 @@ html, body {
   justify-content: center;
 }
 
-.comfortaa-haha {
-  font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
+
 
 body {
   background: #6441A5;  /* fallback for old browsers */
@@ -27,6 +22,7 @@ body {
   width: 50rem;
   height: 20rem;
   perspective: 600px;
+  margin: 2rem;
 }
 
 .cardContainer {
@@ -48,15 +44,9 @@ body {
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
-  border-radius: 1rem;
-  box-shadow: rgba(226, 179, 179, 0.56) 0px 22px 70px 4px;
   text-align: center;
   }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-}
 
 
 .back {
@@ -67,6 +57,9 @@ body {
   background-color: rgb(218, 168, 168);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
+  font-family: "Comfortaa", sans-serif;
+  border-radius: 1rem;
+  box-shadow: rgba(226, 179, 179, 0.56) 0px 22px 70px 4px;
 }
 
 .makeBack {
@@ -74,16 +67,58 @@ body {
   font-weight: bold;
   font-family: "Comfortaa", sans-serif;
   font-size: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(188, 179, 226, 0.56) 0px 22px 70px 4px;
 }
 
 .cardContainer.is-flipped {
     transform: rotateY(180deg);
 }
 
-#nextButton, #showButton {
+#nextButton {
   display: flex;
   margin: 2rem;
 }
+
+
+
+#nextButton {
+  align-items: center;
+  background: #f5f5fa;
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #2a1f62;
+  cursor: pointer;
+  display: flex;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
+}
+
+#nextButton:active {
+  background: #db7b7b;
+  color: rgb(241, 235, 235);
+}
+
+@media (min-width: 768px) {
+  #nextButton {
+    padding: 24px;
+  }
+}
+        
 
 
 p {
@@ -92,7 +127,10 @@ p {
 
 @media only screen and (max-width: 768px) {
   #container {
-    width:15rem;
+    width:30rem;
     height:20rem;
   }
   }
+
+
+  
