@@ -1,0 +1,98 @@
+html, body {
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comfortaa-haha {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  background: #6441A5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 20rem;
+  perspective: 600px;
+}
+
+.cardContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  
+}
+
+.card {
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  box-shadow: rgba(226, 179, 179, 0.56) 0px 22px 70px 4px;
+  text-align: center;
+  }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.back {
+    transform: rotateY( 180deg );
+}
+
+.makeFront {
+  background-color: rgb(218, 168, 168);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.makeBack {
+  background-color: rgb(170, 170, 219);
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.5rem;
+}
+
+.cardContainer.is-flipped {
+    transform: rotateY(180deg);
+}
+
+#nextButton, #showButton {
+  display: flex;
+  margin: 2rem;
+}
+
+
+p {
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    width:15rem;
+    height:20rem;
+  }
+  }
