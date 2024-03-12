@@ -124,4 +124,6 @@ p {
     width: 90vw;
     height: 65vh;
   }
+  .makeFront, .makeBack {
+    font-size: 1.2rem;
 }
